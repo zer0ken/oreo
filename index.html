@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
     <script src="./main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +23,7 @@
     <svg>
         <defs>
             <filter id="gooey">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
                 <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
                     result="goo" />
                 <feComposite in="SourceGraphic" in2="goo" operator="atop" />
@@ -31,4 +31,5 @@
         </defs>
     </svg>
 </body>
+
 </html>

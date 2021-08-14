@@ -16,6 +16,7 @@ html {
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -24,8 +25,11 @@ svg, map {
     height: 0;
 }
 
+area {
+    cursor: pointer;
+}
+
 .space {
-    background-color: var(--wall-color);
     width: 50rem;
     height: 50rem;
     margin: 0 auto;
@@ -37,7 +41,7 @@ svg, map {
     filter: url(#gooey);
 }
 
-.oreo {
+.space .oreo {
     display: block;
     position: relative;
     width: 20rem;
@@ -48,20 +52,16 @@ svg, map {
     transform: translateY(6rem);
 }
 
-area {
-    cursor: pointer;
-}
-
-.oreo.hidden {
+.space .oreo.hidden {
     transform: translateY(6rem) scale(.1) rotateZ(132deg) ;
     opacity: 0;
 }
 
-.oreo.dunked {
+.space .oreo.dunked {
     transform: translateY(21rem);
 }
 
-.milk {
+.space .milk {
     display: block;
     position: relative;
     background-color: var(--milk-color);
