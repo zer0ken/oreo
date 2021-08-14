@@ -30,6 +30,17 @@ area {
 }
 
 .space {
+    background-color: var(--wall-color);
+    width: 50rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem var(--wall-color);
+    overflow: hidden;
+}
+
+.filtering {
     width: 50rem;
     height: 50rem;
     margin: 0 auto;
@@ -41,7 +52,7 @@ area {
     filter: url(#gooey);
 }
 
-.space .oreo {
+.oreo {
     display: block;
     position: relative;
     width: 20rem;
@@ -52,19 +63,20 @@ area {
     transform: translateY(6rem);
 }
 
-.space .oreo.hidden {
+.oreo.hidden {
     transform: translateY(6rem) scale(.1) rotateZ(132deg) ;
     opacity: 0;
 }
 
-.space .oreo.dunked {
+.oreo.dunked {
     transform: translateY(21rem);
 }
 
-.space .milk {
+.milk {
     display: block;
-    position: relative;
+    position: absolute;
     background-color: var(--milk-color);
+    bottom: 0;
     height: 40%;
     width: 100%;
 }
