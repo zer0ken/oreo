@@ -6,11 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <script src="./main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="monitor">
+    <div class="space">
+        <div class="oreo">
+            <img src="./oreo.png" usemap="#mask">
+            <div class="behind"></div>
+            <map name="mask">
+                <area onclick="dunk()" title="Dunk!" coords="245,227,196" shape="circle">
+            </map>
+        </div>
+        <div class="milk"></div>
+        <div class="milk behind"></div>
     </div>
 </body>
 

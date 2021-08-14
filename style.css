@@ -1,5 +1,7 @@
 * {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -7,5 +9,80 @@
 
     --milk-color: #FDFFF5;
     --oreo-color: #272425;
-    --wall-color: #272425;
 }
+
+html {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.space {
+    z-index: 0;
+    background-color: red;
+    width: 50rem;
+    height: 50rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.oreo {
+    position: relative;
+    transform: translateY(10%);
+    transition: all 1s ease;
+}
+
+.oreo.dunked {
+    transform: translateY(42%);
+}
+
+.oreo img {
+    z-index: 100;
+    display: block;
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+}
+.oreo map area {
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+}
+
+.oreo .behind {
+    z-index: 0;
+    background-color: green;
+    width: 15.8rem;
+    height: 15.8rem;
+    margin: 1.4rem 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.milk:not(.behind) {
+    z-index: 110;
+    background-color: orange;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    width: 100%;
+}
+
+.milk.behind {
+    z-index: 0;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    width: 100%;
+}
+
+
+
