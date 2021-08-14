@@ -8,7 +8,7 @@
     font-size: 62.5%;
 
     --milk-color: #FDFFF5;
-    --oreo-color: #272425;
+    --oreo-color: #2a201e;
     --wall-color: #6C6463;
 }
 
@@ -75,11 +75,8 @@ area {
 .milk {
     display: block;
     position: absolute;
-    background-color: var(--milk-color);
+    background-color: var(--oreo-color);
     bottom: 0;
     height: 40%;
     width: 100%;
 }
-
-
-
