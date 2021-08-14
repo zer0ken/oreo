@@ -9,78 +9,63 @@
 
     --milk-color: #FDFFF5;
     --oreo-color: #272425;
+    --wall-color: #6C6463;
 }
 
 html {
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+}
+
+svg, map {
+    display: block;
+    height: 0;
 }
 
 .space {
-    z-index: 0;
-    background-color: red;
+    background-color: var(--wall-color);
     width: 50rem;
     height: 50rem;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+    filter: url(#gooey);
 }
 
 .oreo {
-    position: relative;
-    transform: translateY(10%);
-    transition: all 1s ease;
-}
-
-.oreo.dunked {
-    transform: translateY(42%);
-}
-
-.oreo img {
-    z-index: 100;
     display: block;
-    width: 20rem;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-}
-.oreo map area {
+    position: relative;
     width: 20rem;
     height: 20rem;
+    opacity: 1;
+    transform-origin: center center;
+    transition: all .5s ease-in-out;
+    transform: translateY(6rem);
+}
+
+area {
     cursor: pointer;
 }
 
-.oreo .behind {
-    z-index: 0;
-    background-color: green;
-    width: 15.8rem;
-    height: 15.8rem;
-    margin: 1.4rem 0;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
+.oreo.hidden {
+    transform: translateY(6rem) scale(.1) rotateZ(132deg) ;
+    opacity: 0;
 }
 
-.milk:not(.behind) {
-    z-index: 110;
-    background-color: orange;
-    display: none;
-    position: absolute;
-    bottom: 0;
-    height: 20rem;
-    width: 100%;
+.oreo.dunked {
+    transform: translateY(21rem);
 }
 
-.milk.behind {
-    z-index: 0;
-    background-color: green;
-    position: absolute;
-    bottom: 0;
-    height: 20rem;
+.milk {
+    display: block;
+    position: relative;
+    background-color: var(--milk-color);
+    height: 40%;
     width: 100%;
 }
 
