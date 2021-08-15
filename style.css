@@ -9,7 +9,7 @@
 
     --milk-color: #FDFFF5;
     --oreo-color: #2a201e;
-    --wall-color: #6C6463;
+    --wall-color: #7CC6F2;
 }
 
 html {
@@ -36,7 +36,7 @@ area {
     margin: 0 auto;
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 5rem var(--wall-color);
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
     overflow: hidden;
 }
 
@@ -59,7 +59,7 @@ area {
     height: 20rem;
     opacity: 1;
     transform-origin: center center;
-    transition: all .5s ease-in-out;
+    transition: all .7s ease-in-out;
     transform: translateY(6rem);
 }
 
@@ -75,7 +75,7 @@ area {
 .milk {
     display: block;
     position: absolute;
-    background-color: var(--oreo-color);
+    background-color:  var(--milk-color);
     bottom: 0;
     height: 40%;
     width: 100%;
