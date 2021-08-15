@@ -59,8 +59,7 @@ area {
     height: 20rem;
     opacity: 1;
     transform-origin: center center;
-    transition: all .7s cubic-bezier(.69,1.77,.52,.96),
-                translateY .7s ease;
+    transition: all .7s cubic-bezier(.69,1.77,.52,.96);
     transform: translateY(6rem);
 }
 
@@ -90,4 +89,7 @@ area {
 
 .milk.front {
     opacity: .7;
+    background-color: var(--milk-color);
+    width: 50%;
+    left: 25%;
 }
