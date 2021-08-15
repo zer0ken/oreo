@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('img[usemap]').rwdImageMaps();
-    $('.oreo').removeClass('hidden');
+    $('*').removeClass('hidden');
 })
 
 function dunk() {
