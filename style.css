@@ -8,7 +8,7 @@
     font-size: 62.5%;
 
     --milk-color: #FDFFF5;
-    --oreo-color: #2a201e;
+    --oreo-color: rgb(42, 32, 30);
     --wall-color: #7CC6F2;
 }
 
@@ -36,7 +36,7 @@ area {
     margin: 0 auto;
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0 2rem rgba(42, 32, 30, .6);
     overflow: hidden;
 }
 
