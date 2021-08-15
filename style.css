@@ -35,7 +35,7 @@ area {
     height: 50rem;
     margin: 0 auto;
     position: relative;
-    border-radius: 1rem;
+    border-radius: 50%;
     box-shadow: 0 0 2rem rgba(42, 32, 30, .6);
     overflow: hidden;
 }
